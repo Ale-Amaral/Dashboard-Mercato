@@ -1,27 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard Mercado</title>
-    <style>
-      body {
-        margin: 0;
-        background: #f4f4f4;
-        display: flex;
-        justify-content: center;
-      }
-    </style>
-  </head>
-  <body>
-    <div style="width: 940px; height: 3033px; position: relative; background: #EFEFEF; overflow: hidden">
-      <div style="width: 840px; height: 50px; left: 50px; top: 1174px; position: absolute; background: #E75E07; border-radius: 50px"></div>
-      <div style="width: 940px; height: 5px; left: 0px; top: 1119px; position: absolute; background: black"></div>
-      <div style="width: 840px; height: 51px; left: 50px; top: 1751px; position: absolute; background: black"></div>
-      <div style="width: 841px; height: 51px; left: 50px; top: 2206px; position: absolute; background: black"></div>
-      <div style="width: 840px; height: 303px; left: 50px; top: 364px; position: absolute; background: #F7F7F7; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.02)"></div>
-      <div style="width: 210px; height: 38px; left: 148px; top: 111px; position: absolute; background: #242422; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.02); border-top-left-radius: 15px; border-top-right-radius: 15px"></div>
-      <div style="width: 160px; height: 38px; left: 608px; top: 111px; position: absolute; background: #242422; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.02); border-top-left-radius: 15px; border-top-right-radius: 15px"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard Protheus</title>
+  <style>
+    /* Ajustes gerais da página */
+    body {
+      margin: 0;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <!-- INÍCIO DO SEU BLOCO DE LAYOUT -->
+  <div style="width: 940px; height: 3033px; position: relative; background: #EFEFEF; overflow: hidden">
+    <div style="width: 840px; height: 50px; left: 50px; top: 1174px; position: absolute; background: #E75E07; border-radius: 50px"></div>
+    <div style="width: 940px; height: 5px; left: 0px; top: 1119px; position: absolute; background: black"></div>
+    <div style="width: 840px; height: 51px; left: 50px; top: 1751px; position: absolute; background: black"></div>
+    <div style="width: 841px; height: 51px; left: 50px; top: 2206px; position: absolute; background: black"></div>
+    <div style="width: 840px; height: 303px; left: 50px; top: 364px; position: absolute; background: #F7F7F7; box-shadow: 0 0 25px rgba(0,0,0,0.02)"></div>
+    <div style="width: 210px; height: 38px; left: 148px; top: 111px; position: absolute; background: #242422; box-shadow: 0 0 25px rgba(0,0,0,0.02); border-top-left-radius: 15px; border-top-right-radius: 15px"></div>
+    <div style="width: 160px; height: 38px; left: 608px; top: 111px; position: absolute; background: #242422; box-shadow: 0 0 25px rgba(0,0,0,0.02); border-top-left-radius: 15px; border-top-right-radius: 15px"></div>
+    <div style="width: 252px; height: 130px; left: 302px; top: 494px; position: absolute; transform: rotate(180deg); transform-origin: top left; background: #F7F7F7; box-shadow: 0 0 25px rgba(0,0,0,0.02); border-radius: 25px"></div>
+    <div style="width: 477px; height: 306px; left: 50px; top: 1851px; position: absolute; background: #D9D9D9"></div>
+    <div style="width: 842px; height: 385px; left: 49px; top: 2287px; position: absolute; background: #D9D9D9"></div>
+    <div style="width: 340px; height: 306px; left: 550px; top: 1851px; position: absolute; background: #D9D9D9"></div>
+    <div style="width: 397px; height: 214px; left: 50px; top: 2702px; position: absolute; background: #D9D9D9"></div>
+    <div style="width: 423px; height: 214px; left: 467px; top: 2702px; position: absolute; background: #D9D9D9"></div>
+    <div style="width: 148px; height: 106px; left: 81px; top: 1296px; position: absolute; background: #D9D9D9"></div>
+    <div style="width: 148px; height: 106px; left: 81px; top: 1458px; position: absolute; background: #D9D9D9"></div>
+    <div style="width: 148px; height: 106px; left: 81px; top: 1620px; position: absolute; background: #D9D9D9"></div>
+    <div style="width: 744px; height: 0; left: 81px; top: 1432px; position: absolute; outline: 1px #000 solid; outline-offset: -0.5px"></div>
+    <div style="width: 744px; height: 0; left: 81px; top: 1594px; position: absolute; outline: 1px #000 solid; outline-offset: -0.5px"></div>
+    <div style="width: 430px; height: 0; left: 378px; top: 1296px; position: absolute; transform: rotate(90deg); transform-origin: top left; outline: 1px #000 solid; outline-offset: -0.5px"></div>
+    <div style="width: 430px; height: 0; left: 527px; top: 1296px; position: absolute; transform: rotate(90deg); transform-origin: top left; outline: 1px #000 solid; outline-offset: -0.5px"></div>
+    <div style="width: 430px; height: 0; left: 676px; top: 1296px; position: absolute; transform: rotate(90deg); transform-origin: top left; outline: 1px #000 solid; outline-offset: -0.5px"></div>
+    <div style="width: 71px; height: 20px; left: 424px; top: 1276px; position: absolute; color: #000; font-size: 12px; font-family: Inter, sans-serif; font-weight: 400; word-wrap: break-word">Orçamentos</div>
+    <div style="width: 84px; height: 20px; left: 554px; top: 1276px; position: absolute; color: #000; font-size: 12px; font-family: Inter, sans-serif; font-weight: 400; word-wrap: break-word">Faturamento</div>
+    <div style="width: 84px; height: 20px; left: 708px; top: 1274px; position: absolute; color: #000; font-size: 12px; font-family: Inter, sans-serif; font-weight: 400; word-wrap: break-word">Conversão</div>
+    <div style="width: 78px; height: 20px; left: 257px; top: 1330px; position: absolute; color: #000; font-size: 12px; font-family: Inter, sans-serif; font-weight: 400; word-wrap: break-word">Ano Anterior</div>
+    <div style="width: 71px; height: 20px; left: 258px; top: 1478px; position: absolute; color: #000; font-size: 12px; font-family: Inter, sans-serif; font-weight: 400; word-wrap: break-word">Ano anterior</div>
+    <div style="width: 71px; height: 20px; left: 257px; top: 1640px; position: absolute; color: #000; font-size: 12px; font-family: Inter, sans-serif; font-weight: 400; word-wrap: break-word">Ano anterior</div>
+    <div style="width: 71px; height: 20px; left: 257px; top: 1375px; position: absolute; color: #000; font-size: 12px; font-family: Inter, sans-serif; font-weight: 400; word-wrap: break-word">Ano atual</div>
+    <div style="width: 71px; height: 20px; left: 258px; top: 1523px; position: absolute; color: #000; font-size: 12px; font-family: Inter, sans-serif; font-weight: 400; word-wrap: break-word">Ano atual</div>
+    <div style="width: 71px; height: 20px; left: 257px; top: 1685px; position: absolute; color: #000; font-size: 12px; font-family: Inter, sans-serif; font-weight: 400; word-wrap: break-word">Ano atual</div>
+    <div style="width: 567px; height: 0; left: 258px; top: 1360px; position: absolute; outline: 1px #000 solid; outline-offset: -0.5px"></div>
+    <div style="width: 566px; height: 0; left: 259px; top: 1508px; position: absolute; outline: 1px #000 solid; outline-offset: -0.5px"></div>
+    <div style="width: 567px; height: 0; left: 258px; top: 1670px; position: absolute; outline: 1px #000 solid; outline-offset: -0.5px"></div>
+    <div style="width: 299px; height: 147px; left: 313px; top: 2846px; position: absolute; background: rgba(217,217,217,0.10); border: 1px rgba(255,255,255,0.50) solid; backdrop-filter: blur(17.5px)"></div>
+    <div style="width: 405px; height: 320px; left: 50px; top: 697px; position: absolute; background: #F7F7F7; box-shadow: 0 0 25px rgba(0,0,0,0.02); border-radius: 25px"></div>
+    <div style="width: 405px; height: 185px; left: 50px; top: 149px; position: absolute; background: #F7F7F7; box-shadow: 0 0 25px rgba(0,0,0,0.02); border-radius: 25px"></div>
+    <div style="width: 405px; height: 185px; left: 485px; top: 149px; position: absolute; background: #F7F7F7; box-shadow: 0 0 25px rgba(0,0,0,0.02); border-radius: 25px"></div>
+    <div style="width: 405px; height: 320px; left: 485px; top: 697px; position: absolute; background: #F7F7F7; box-shadow: 0 0 25px rgba(0,0,0,0.02); border-radius: 25px"></div>
+    <div style="left: 168px; top: 121px; position: absolute; display: flex; flex-direction: column; text-align: center;">
+      <span style="color: #fff; font-size: 25px; font-family: Montserrat, sans-serif; font-weight: 500;">Ano</span>
+      <span style="color: #fff; font-size: 25px; font-family: Montserrat, sans-serif; font-weight: 700;">Anterior</span>
     </div>
-  </body>
+    <div style="left: 200px; top: 164px; position: absolute; display: flex; flex-direction: column; text-align: center; color: #242422; font-size: 15px; font-family: Montserrat, sans-serif; font-weight: 500;">Orçamentos</div>
+    <div style="left: 635px; top: 164px; position: absolute; display: flex; flex-direction: column; text-align: center; color: #242422; font-size: 15px; font-family: Montserrat, sans-serif; font-weight: 500;">Orçamentos</div>
+    <div style="left: 99px; top: 257px; position: absolute; display: flex; flex-direction: column; text-align: center; color: #242422; font-size: 15px; font-family: Montserrat, sans-serif; font-weight: 500;">Faturamento</div>
+    <div style="left: 534px; top: 257px; position: absolute; display: flex; flex-direction: column; text-align: center; color: #242422; font-size: 15px; font-family: Montserrat, sans-serif; font-weight: 500;">Faturamento</div>
+    <div style="left: 311px; top: 257px; position: absolute; display: flex; flex-direction: column; text-align: center; color: #E75E07; font-size: 15px; font-family: Montserrat, sans-serif; font-weight: 700;">Conversão</div>
+    <div style="left: 746px; top: 257px; position: absolute; display: flex; flex-direction: column; text-align: center; color: #E75E07; font-size: 15px; font-family: Montserrat, sans-serif; font-weight: 700;">Conversão</div>
+    <div style="width: 20px; height: 20px; left: 70px; top: 627px; position: absolute; background: #242422; border-radius: 5px"></div>
+    <div style="width: 20px; height: 20px; left: 143px; top: 977px; position: absolute; background: #242422; border-radius: 5px"></div>
+    <div style="width: 20px; height: 20px; left: 200px; top: 627px; position: absolute; background: #E75E07; border-radius: 5px"></div>
+    <div style="width: 20px; height: 20px; left: 273px; top: 977px; position: absolute; background: #E75E07; border-radius: 5px"></div>
+    <div style="width: 840px; height: 71px; left: 50px; top: 20px; position: absolute; display: inline-flex; align-items: center; justify-content: center; gap: 20px;">
+      <div style="color: #E75E07; font-size: 50px; font-family: Montserrat, sans-serif; font-weight: 400;">Faturamento</div>
+      <div style="width: 120px; height: 48px; background: #242422;"></div>
+    </div>
+  </div>
+  <!-- FIM DO SEU BLOCO DE LAYOUT -->
+</body>
 </html>

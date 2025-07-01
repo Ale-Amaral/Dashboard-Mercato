@@ -4,12 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard Box</title>
-    <!-- Tailwind CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        margin: 0;
+        background: #f4f4f4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+    </style>
   </head>
-  <body class="flex items-center justify-center h-screen bg-gray-100">
-    <div class="w-[280px] h-[185px] relative">
-      <div class="absolute top-0 left-0 w-[280px] h-[185px] bg-[#d9d9d9]"></div>
+  <body>
+    <div style="width: 280px; height: 185px; position: relative;">
+      <div style="width: 280px; height: 185px; left: 0px; top: 0px; position: absolute; background: #D9D9D9;"></div>
+      <div style="width: 249px; height: 51px; left: 13px; top: 13px; position: absolute; background: black;"></div>
     </div>
   </body>
 </html>

@@ -1,9 +1,15 @@
-import React from "react";
-
-export const Box = () => {
-  return (
-    <div className="w-[280px] h-[185px]">
-      <div className="fixed w-[280px] h-[185px] top-0 left-0 bg-[#d9d9d9]" />
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Box</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex items-center justify-center h-screen bg-gray-100">
+    <div class="w-[280px] h-[185px] relative">
+      <div class="absolute top-0 left-0 w-[280px] h-[185px] bg-[#d9d9d9]"></div>
     </div>
-  );
-};
+  </body>
+</html>

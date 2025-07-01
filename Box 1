@@ -1,0 +1,9 @@
+import React from "react";
+
+export const Box = () => {
+  return (
+    <div className="w-[280px] h-[185px]">
+      <div className="fixed w-[280px] h-[185px] top-0 left-0 bg-[#d9d9d9]" />
+    </div>
+  );
+};

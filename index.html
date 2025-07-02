@@ -1,79 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dashboard Protheus</title>
-  <style>
-    body {
-      margin: 0;
-      background: #f4f4f4;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      min-height: 100vh;
-    }
-  </style>
-</head>
-<body>
-  <div style="width: 940px; height: 3033px; position: relative; background: #EFEFEF; overflow: hidden">
-    <div style="width: 558px; height: 303px; left: 890px; top: 667px; position: absolute; transform: rotate(180deg); transform-origin: top left; background: #F7F7F7; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.02); border-radius: 25px"></div>
-    <div style="width: 550px; height: 143px; left: 600px; top: 667px; position: absolute; transform: rotate(180deg); transform-origin: top left; background: #F7F7F7; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.02); border-radius: 25px"></div>
-    <div style="width: 840px; height: 50px; left: 50px; top: 1174px; position: absolute; background: #E75E07; border-radius: 50px"></div>
-    <div style="width: 940px; height: 5px; left: 0px; top: 1119px; position: absolute; background: black"></div>
-    <div style="width: 840px; height: 51px; left: 50px; top: 1751px; position: absolute; background: black"></div>
-    <div style="width: 841px; height: 51px; left: 50px; top: 2206px; position: absolute; background: black"></div>
-    <div style="width: 210px; height: 38px; left: 148px; top: 111px; position: absolute; background: #242422; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.02); border-top-left-radius: 15px; border-top-right-radius: 15px"></div>
-    <div style="width: 160px; height: 38px; left: 608px; top: 111px; position: absolute; background: #242422; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.02); border-top-left-radius: 15px; border-top-right-radius: 15px"></div>
-    <div style="width: 252px; height: 130px; left: 302px; top: 494px; position: absolute; transform: rotate(180deg); transform-origin: top left; background: #F7F7F7; box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.02); border-radius: 25px"></div>
-    <div style="width: 477px; height: 306px; left: 50px; top: 1851px; position: absolute; background: #D9D9D9"></div>
-    <div style="width: 842px; height: 385px; left: 49px; top: 2287px; position: absolute; background: #D9D9D9"></div>
-    <div style="width: 340px; height: 306px; left: 550px; top: 1851px; position: absolute; background: #D9D9D9"></div>
-    <div style="width: 397px; height: 214px; left: 50px; top: 2702px; position: absolute; background: #D9D9D9"></div>
-    <div style="width: 423px; height: 214px; left: 467px; top: 2702px; position: absolute; background: #D9D9D9"></div>
-    <div style="width: 148px; height: 106px; left: 81px; top: 1296px; position: absolute; background: #D9D9D9"></div>
-    <div style="width: 148px; height: 106px; left: 81px; top: 1458px; position: absolute; background: #D9D9D9"></div>
-    <div style="width: 148px; height: 106px; left: 81px; top: 1620px; position: absolute; background: #D9D9D9"></div>
-    <div style="width: 744px; height: 0px; left: 81px; top: 1432px; position: absolute; outline: 1px black solid; outline-offset: -0.5px"></div>
-    <div style="width: 744px; height: 0px; left: 81px; top: 1594px; position: absolute; outline: 1px black solid; outline-offset: -0.5px"></div>
-    <div style="width: 430px; height: 0px; left: 378px; top: 1296px; position: absolute; transform: rotate(90deg); transform-origin: top left; outline: 1px black solid; outline-offset: -0.5px"></div>
-    <div style="width: 430px; height: 0px; left: 527px; top: 1296px; position: absolute; transform: rotate(90deg); transform-origin: top left; outline: 1px black solid; outline-offset: -0.5px"></div>
-    <div style="width: 430px; height: 0px; left: 676px; top: 1296px; position: absolute; transform: rotate(90deg); transform-origin: top left; outline: 1px black solid; outline-offset: -0.5px"></div>
-    <div style="width: 71px; height: 20px; left: 424px; top: 1276px; position: absolute; color: black; font-size: 12px; font-family: Inter, sans-serif; font-weight: 400; word-wrap: break-word">Orçamentos</div>
-    <div style="width: 84px; height: 20px; left: 554px; top: 1276px; position: absolute; color: black; font-size: 12px; font-family: Inter, sans-serif; font-weight: 400; word-wrap: break-word">Faturamento</div>
-    <div style="width: 84px; height: 20px; left: 708px; top: 1274px; position: absolute; color: black; font-size: 12px; font-family: Inter, sans-serif; font-weight: 400; word-wrap: break-word">Conversão</div>
-    <div style="width: 78px; height: 20px; left: 257px; top: 1330px; position: absolute; color: black; font-size: 12px; font-family: Inter, sans-serif; font-weight: 400; word-wrap: break-word">Ano Anterior</div>
-    <div style="width: 71px; height: 20px; left: 258px; top: 1478px; position: absolute; color: black; font-size: 12px; font-family: Inter, sans-serif; font-weight: 400; word-wrap: break-word">Ano anterior</div>
-    <div style="width: 71px; height: 20px; left: 257px; top: 1640px; position: absolute; color: black; font-size: 12px; font-family: Inter, sans-serif; font-weight: 400; word-wrap: break-word">Ano anterior</div>
-    <div style="width: 71px; height: 20px; left: 257px; top: 1375px; position: absolute; color: black; font-size: 12px; font-family: Inter, sans-serif; font-weight: 400; word-wrap: break-word">Ano atual</div>
-    <div style="width: 71px; height: 20px; left: 258px; top: 1523px; position: absolute; color: black; font-size: 12px; font-family: Inter, sans-serif; font-weight: 400; word-wrap: break-word">Ano atual</div>
-    <div style="width: 71px; height: 20px; left: 257px; top: 1685px; position: absolute; color: black; font-size: 12px; font-family: Inter, sans-serif; font-weight: 400; word-wrap: break-word">Ano atual</div>
-    <div style="width: 567px; height: 0px; left: 258px; top: 1360px; position: absolute; outline: 1px black solid; outline-offset: -0.5px"></div>
-    <div style="width: 566px; height: 0px; left: 259px; top: 1508px; position: absolute; outline: 1px black solid; outline-offset: -0.5px"></div>
-    <div style="width: 567px; height: 0px; left: 258px; top: 1670px; position: absolute; outline: 1px black solid; outline-offset: -0.5px"></div>
-    <div style="width: 299px; height: 147px; left: 313px; top: 2846px; position: absolute; background: rgba(217,217,217,0.10); border: 1px rgba(255,255,255,0.50) solid; backdrop-filter: blur(17.5px)"></div>
-    <div style="width: 405px; height: 320px; left: 50px; top: 697px; position: absolute; background: #F7F7F7; box-shadow: 0px 0px 25px rgba(0,0,0,0.02); border-radius: 25px"></div>
-    <div style="width: 405px; height: 185px; left: 50px; top: 149px; position: absolute; background: #F7F7F7; box-shadow: 0px 0px 25px rgba(0,0,0,0.02); border-radius: 25px"></div>
-    <div style="width: 405px; height: 185px; left: 485px; top: 149px; position: absolute; background: #F7F7F7; box-shadow: 0px 0px 25px rgba(0,0,0,0.02); border-radius: 25px"></div>
-    <div style="width: 405px; height: 320px; left: 485px; top: 697px; position: absolute; background: #F7F7F7; box-shadow: 0px 0px 25px rgba(0,0,0,0.02); border-radius: 25px"></div>
-    <div style="left: 168px; top: 121px; position: absolute; display: flex; flex-direction: column; text-align: center;">
-      <span style="color: white; font-size: 25px; font-family: Montserrat, sans-serif; font-weight: 500;">Ano</span>
-      <span style="color: white; font-size: 25px; font-family: Montserrat, sans-serif; font-weight: 700;">Anterior</span>
-    </div>
-    <div style="left: 200px; top: 164px; position: absolute; display: flex; flex-direction: column; text-align: center; color: #242422; font-size: 15px; font-family: Montserrat, sans-serif; font-weight: 500;">Orçamentos</div>
-    <div style="left: 635px; top: 164px; position: absolute; display: flex; flex-direction: column; text-align: center; color: #242422; font-size: 15px; font-family: Montserrat, sans-serif; font-weight: 500;">Orçamentos</div>
-    <div style="left: 99px; top: 257px; position: absolute; display: flex; flex-direction: column; text-align: center; color: #242422; font-size: 15px; font-family: Montserrat, sans-serif; font-weight: 500;">Faturamento</div>
-    <div style="left: 534px; top: 257px; position: absolute; display: flex; flex-direction: column; text-align: center; color: #242422; font-size: 15px; font-family: Montserrat, sans-serif; font-weight: 500;">Faturamento</div>
-    <div style="left: 311px; top: 257px; position: absolute; display: flex; flex-direction: column; text-align: center; color: #E75E07; font-size: 15px; font-family: Montserrat, sans-serif; font-weight: 700;">Conversão</div>
-    <div style="left: 746px; top: 257px; position: absolute; display: flex; flex-direction: column; text-align: center; color: #E75E07; font-size: 15px; font-family: Montserrat, sans-serif; font-weight: 700;">Conversão</div>
-    <div style="width: 20px; height: 20px; left: 70px; top: 627px; position: absolute; background: #242422; border-radius: 5px"></div>
-    <div style="width: 20px; height: 20px; left: 143px; top: 977px; position: absolute; background: #242422; border-radius: 5px"></div>
-    <div style="width: 20px; height: 20px; left: 200px; top: 627px; position: absolute; background: #E75E07; border-radius: 5px"></div>
-    <div style="width: 20px; height: 20px; left: 273px; top: 977px; position: absolute; background: #E75E07; border-radius: 5px"></div>
-    <div style="width: 840px; height: 71px; left: 50px; top: 20px; position: absolute; display: inline-flex; align-items: center; justify-content: center; gap: 20px;">
-      <div style="color: #E75E07; font-size: 50px; font-family: Montserrat, sans-serif; font-weight: 400;">Faturamento</div>
-      <div style="width: 120px; height: 48px; background: #242422;"></div>
-    </div>
-  </div>
-</body>
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    
+    <body>
+        <div class="max-w-[58.75rem] mx-auto bg-zinc-100">
+            <img class="block" src="./assets/image-31029.44518626196.png" />
+            <img class="block" src="./assets/image-46680.537614017405.png" />
+            <img class="block" src="./assets/image-14684.773863740453.png" />
+            <img class="block" src="./assets/image-26734.73462484117.png" />
+            <img class="block" src="./assets/image-66570.67293067582.png" />
+            <img class="block" src="./assets/image-30605.883908454136.png" />
+            <img class="block" src="./assets/image-52675.1087475106.png" />
+            <img class="block" src="./assets/image-75505.84123438422.png" />
+            <img class="block" src="./assets/image-92265.5543140866.png" />
+            <img class="block" src="./assets/image-5593.253819310106.png" />
+            <img class="block" src="./assets/image-95841.5042246074.png" />
+            <img class="block" src="./assets/image-80661.97882689588.png" />
+            <img class="block" src="./assets/image-58083.98349143198.png" />
+            <img class="block" src="./assets/image-74732.7315445913.png" />
+            <img class="block" src="./assets/image-10687.198523896168.png" />
+            <p class="block text-xs text-black ">Orçamentos</p>
+            <p class="block text-xs text-black ">Faturamento</p>
+            <p class="block text-xs text-black ">Conversão</p>
+            <p class="block text-xs text-black ">Ano Anterior</p>
+            <p class="block text-xs text-black ">Ano anterior</p>
+            <p class="block text-xs text-black ">Ano anterior</p>
+            <p class="block text-xs text-black ">Ano atual</p>
+            <p class="block text-xs text-black ">Ano atual</p>
+            <p class="block text-xs text-black ">Ano atual</p>
+            <img class="block" src="./assets/image-47290.87190279988.png"
+            />
+            <img class="block" src="./assets/image-12942.901412508245.png" />
+            <img class="block" src="./assets/image-40620.90217188747.png" />
+            <img class="block" src="./assets/image-97641.39350326313.png" />
+            <img class="block" src="./assets/image-15132.698077287387.png" />
+            <img class="block" src="./assets/image-38232.43075374936.png" />
+            <img class="block" src="./assets/image-9704.02208820289.png" />
+            <img class="block" src="./assets/image-78055.29529683506.png" />
+            <p class="block capitalize text-center text-[1.56rem] text-white ">Ano Anterior</p>
+            <p class="block capitalize text-center text-[0.94rem] text-neutral-800  font-medium">Orçamentos</p>
+            <p class="block capitalize text-center text-[0.94rem] text-neutral-800  font-medium">Orçamentos</p>
+            <p class="block capitalize text-center text-[0.94rem] text-neutral-800  font-medium">Faturamento</p>
+            <p class="block capitalize text-center text-[0.94rem] text-neutral-800  font-medium">Faturamento</p>
+            <p class="block capitalize text-center text-[0.94rem] text-orange-600  font-bold">Conversão</p>
+            <p class="block capitalize text-center text-[0.94rem] text-orange-600  font-bold">Conversão</p>
+            <p class="block capitalize text-center text-[1.56rem] text-orange-600 ">% faturado</p>
+            <p class="block text-xl text-neutral-800 ">Comparativo de Faturamento Anual</p>
+            <p class="block text-center text-xl text-neutral-800 ">Orçamento Anual Anterior x Atual</p>
+            <p class="block text-center text-xl text-neutral-800 ">Faturamento - Evolução</p>
+            <p class="block text-xs text-neutral-800 ">Ano Anterior</p>
+            <p class="block text-xs text-neutral-800 ">Ano Anterior</p>
+            <p class="block text-xs text-orange-600 ">Ano Atual</p>
+            <p class="block text-xs text-orange-600 ">Ano Atual</p>
+            <p class="block capitalize text-center text-[1.56rem] text-white ">Ano Atual</p>
+            <img class="block" src="./assets/image-37242.28741239517.png"
+            />
+            <img class="block" src="./assets/image-57035.67315501929.png" />
+            <img class="block" src="./assets/image-73136.54974266188.png" />
+            <img class="block" src="./assets/image-53096.79130254286.png" />
+            <img class="block" src="./assets/image-62546.904235549584.png" />
+            <img class="block" src="./assets/image-44352.761957301176.png" />
+            <img class="block" src="./assets/image-54012.1836501839.png" />
+            <img class="block" src="./assets/image-43814.61794915735.png" />
+            <div class="flex flex-row gap-5 justify-center items-center">
+                <p class="block text-center text-[3.13rem] text-orange-600 ">Faturamento Belimo</p>
+            </div>
+        </div>
+    </body>
+
 </html>
